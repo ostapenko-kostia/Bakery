@@ -1,0 +1,11 @@
+.close-button {
+    aspect-ratio: 1;
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    cursor: pointer;
+    img {
+        width: 16px;
+        aspect-ratio: inherit;
+    }
+}

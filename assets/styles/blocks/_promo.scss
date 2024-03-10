@@ -1,0 +1,16 @@
+.promo {
+    font-weight: 500;
+    font-size: 14px;
+    .container {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    background-color: #c2e8ce;
+    height: 50px;
+    &-title {
+        margin-inline: auto;
+        text-align: center;
+        @include fluid-text(14, 12);
+    }
+}
