@@ -199,10 +199,18 @@ section {
 
 .section-title {
   font-family: "Cormorant", sans-serif;
+  font-size: 40px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.section-title span {
+  color: var(--color-orange);
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--color-dark);
+  font-family: "Cormorant", sans-serif;
 }
 
 :root {
@@ -476,14 +484,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .offers-title {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   margin-inline: auto;
-  font-size: 40px;
-}
-.offers-title span {
-  color: var(--color-orange);
 }
 .offers-cards {
   padding-top: 40px;
@@ -569,4 +570,59 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   color: #656565;
   text-decoration: line-through;
+}
+
+.whyChoose-title {
+  margin-inline: auto;
+}
+@media (max-width: 767px) {
+  .whyChoose-title {
+    font-size: 30px;
+  }
+}
+.whyChoose-cards {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 30px;
+}
+.whyChoose-card {
+  width: 210px;
+}
+.whyChoose-card-img {
+  margin-bottom: 20px;
+  width: 48px;
+  aspect-ratio: 1;
+}
+.whyChoose-card-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+@media (max-width: 465px) {
+  .whyChoose-title {
+    font-size: 20px;
+  }
+  .whyChoose-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-inline: auto;
+  }
 }

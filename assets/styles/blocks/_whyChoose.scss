@@ -1,0 +1,43 @@
+.whyChoose {
+    &-title {
+        margin-inline: auto;
+        @include mobile {
+            font-size: 30px;
+        }
+    }
+    &-cards {
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    &-card {
+        width: 210px;
+        &-img {
+            margin-bottom: 20px;
+            width: 48px;
+            aspect-ratio: 1;
+        }
+        &-title {
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 25px;
+        }
+    }
+}
+
+@media (max-width: 465px) {
+    .whyChoose {
+        &-title {
+            font-size: 20px;
+        }
+        &-cards {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: unset;
+            width: fit-content;
+            margin-inline: auto;
+        }
+    }
+}

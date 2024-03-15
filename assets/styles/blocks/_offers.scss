@@ -1,11 +1,6 @@
 .offers {
     &-title {
-        width: fit-content;
         margin-inline: auto;
-        font-size: 40px;
-        span {
-            color: var(--color-orange);
-        }
     }
     &-cards {
         padding-top: 40px;
