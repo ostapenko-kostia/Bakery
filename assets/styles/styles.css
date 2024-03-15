@@ -197,6 +197,14 @@ section {
   padding-top: var(--section-padding-y);
 }
 
+.section-title {
+  font-family: "Cormorant", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-dark);
+}
+
 :root {
   --color-orange: #ff8126;
   --color-dark: #1f1f1f;
@@ -225,7 +233,7 @@ section {
 .promo-title {
   margin-inline: auto;
   text-align: center;
-  font-size: clamp(12px, 0.9722222222vw, 14px);
+  font-size: 14px;
 }
 
 .close-button {
@@ -398,9 +406,9 @@ section {
   padding: 122px 0 195px 0;
 }
 .hero-title {
-  font-family: "Cormorant";
+  font-family: "Cormorant", sans-serif;
   font-weight: 700;
-  font-size: clamp(24px, 3.4722222222vw, 50px);
+  font-size: 50px;
 }
 .hero-text {
   display: -webkit-box;
@@ -434,6 +442,11 @@ section {
     margin-inline: auto;
   }
 }
+@media (max-width: 424px) {
+  .hero {
+    padding: 122px 0 20px 0;
+  }
+}
 .button {
   background-color: var(--color-orange);
   border: none;
@@ -460,4 +473,100 @@ section {
   .button:active {
     scale: 1.1;
   }
+}
+
+.offers-title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+  font-size: 40px;
+}
+.offers-title span {
+  color: var(--color-orange);
+}
+.offers-cards {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 30px;
+  margin-inline: auto;
+  width: 100%;
+}
+@media (max-width: 579px) {
+  .offers-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: unset;
+        flex-wrap: unset;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+.offers-card {
+  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.offers-card-bottom {
+  padding: 20px 20px 30px 20px;
+  text-align: center;
+  margin-inline: auto;
+}
+.offers-card-button {
+  width: 230px;
+  height: 40px;
+}
+.offers-card-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.offers-card-info {
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 5px;
+}
+.offers-card-price {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--color-orange);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 5px;
+     -moz-column-gap: 5px;
+          column-gap: 5px;
+  margin-inline: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.offers-card-price span {
+  font-weight: 400;
+  font-size: 18px;
+  color: #656565;
+  text-decoration: line-through;
 }

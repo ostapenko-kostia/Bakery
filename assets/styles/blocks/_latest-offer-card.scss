@@ -1,0 +1,41 @@
+.offers-card {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    font-family: 'Poppins', sans-serif;
+    &-bottom {
+        padding: 20px 20px 30px 20px;
+        text-align: center;
+        margin-inline: auto;
+    }
+    &-button {
+        width: 230px;
+        height: 40px;
+    }
+    &-title {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &-info {
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+    &-price {
+        font-weight: 600;
+        font-size: 24px;
+        color: var(--color-orange);
+        display: flex;
+        column-gap: 5px;
+        margin-inline: auto;
+        align-items: center;
+        span {
+            font-weight: 400;
+            font-size: 18px;
+            color: #656565;
+            text-decoration: line-through;
+        }
+    }
+}

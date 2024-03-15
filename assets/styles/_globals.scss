@@ -19,3 +19,11 @@ a {
 section {
     padding-top: var(--section-padding-y);
 }
+
+.section-title {
+    font-family: 'Cormorant', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-dark);
+}

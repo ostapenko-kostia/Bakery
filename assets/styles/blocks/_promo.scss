@@ -11,6 +11,6 @@
     &-title {
         margin-inline: auto;
         text-align: center;
-        @include fluid-text(14, 12);
+        font-size: 14px;
     }
 }
