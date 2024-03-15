@@ -1,3 +1,5 @@
-@import 'fonts', 'normalize', 'utils', 'globals', 'variables', 'media', 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Poppins:wght@300;400;500;600&display=swap');
 
-@import 'blocks/promo', 'blocks/close-button';
+@import 'normalize', 'utils', 'globals', 'variables', 'media', 'mixins';
+
+@import 'blocks/promo', 'blocks/close-button', 'blocks/header';

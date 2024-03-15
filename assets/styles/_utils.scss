@@ -1,5 +1,19 @@
 .container {
-    max-width: calc(var(--container-width) + var(--container-padding-x) * 2) !important;
+    max-width: calc(
+        var(--container-width) + var(--container-padding-x) * 2
+    ) !important;
     height: 100%;
     margin-inline: auto;
+    padding: 0 var(--container-padding-x);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }

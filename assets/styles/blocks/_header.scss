@@ -1,0 +1,114 @@
+.header {
+    height: 135px;
+    display: flex;
+    @include tablet {
+        .header-list {
+            display: none;
+        }
+        .burger-button {
+            display: block !important;
+        }
+    }
+
+    .header-buttons {
+        display: flex;
+        column-gap: 10px;
+        margin-left: auto;
+        .header-button {
+            cursor: pointer;
+            width: 60px;
+            aspect-ratio: 1;
+            background-color: transparent;
+            border: 1px solid #bfbfbf;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .cart-button-count {
+                position: absolute;
+                top: 6px;
+                right: -10px;
+                font-weight: 500;
+                font-size: 12px;
+                color: #fff;
+                background-color: var(--color-orange);
+                border-radius: 50%;
+                padding: 2px 3px;
+            }
+        }
+        .cart-button {
+            position: relative !important;
+        }
+    }
+    .container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .burger-button {
+        border: none;
+        background-color: transparent;
+        margin-right: 20px;
+        display: none;
+    }
+    @include mobile-l {
+        .header-buttons {
+            max-width: 170px;
+        }
+    }
+    @include mobile-s {
+        .header-buttons {
+            max-width: 140px;
+        }
+        .burger-button {
+            margin-right: 5px;
+        }
+        .logo {
+            scale: .9;
+        }
+    }
+}
+
+.modal-nav-list {
+    flex-direction: column;
+    column-gap: 0px;
+    row-gap: 20px;
+    padding-left: 0 !important;
+}
+
+.header-list {
+    padding-left: 60px;
+    display: flex;
+    position: relative;
+    column-gap: 40px;
+    &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-text {
+            display: flex;
+            column-gap: 7px;
+            font-weight: 500;
+            font-size: 15px;
+            cursor: pointer;
+        }
+    }
+}
+
+.select-modal {
+    position: absolute;
+    margin-top: 20px;
+    background-color: #dedede;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    li {
+        button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            border-bottom: 1px solid #bbb;
+        }
+    }
+}

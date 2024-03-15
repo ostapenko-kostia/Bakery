@@ -1,0 +1,11 @@
+.cross-button {
+    width: 48px;
+    aspect-ratio: 1;
+
+    position: relative;
+    border-radius: var(--border-radius);
+
+    @include hover {
+        background-color: var(--color-dark-blue);
+    }
+}

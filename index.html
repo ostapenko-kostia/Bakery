@@ -8,12 +8,12 @@
         <link rel="import" href="assets/blocks/promo.html" />
     </head>
     <body>
-        <section class="promo">
+        <div class="promo" id="promo">
             <div class="container">
                 <h3 class="promo-title">
                     Free Delivery over $100. Gift with Purchase over $150
                 </h3>
-                <button class="promo-button close-button">
+                <button class="promo-button close-button" onclick="this.parentElement.parentElement.remove()">
                     <img
                         class="close-button"
                         src="assets/images/cross.svg"
@@ -21,8 +21,145 @@
                     />
                 </button>
             </div>
-        </section>
+        </div>
+        <header class="header" id="header">
+            <div class="container">
+                <button class="burger-button" id="burger-button" onclick="document.querySelector('#mobileOverlay').showModal()">
+                    <img
+                        src="assets/images/burger-icon.png"
+                        alt="Open Menu"
+                        width="30px"
+                        height="30px"
+                    />
+                </button>
+                <a class="logo logo-link"
+                    ><img
+                        src="assets/images/logo.svg"
+                        alt="Logo"
+                        width="110"
+                        height="95"
+                /></a>
+                <ul class="header-list">
+                    <li class="header-list-item select" id="select">
+                        <div
+                            class="header-list-item-text"
+                            onclick="selectModalHandler(this)"
+                        >
+                            <a href="#">Occasions</a>
+                            <img src="assets/images/arrow.svg" alt="Open" />
+                        </div>
+                        <ul class="select-modal hidden">
+                            <li><button>Placeholder</button></li>
+                            <li><button>Placeholder</button></li>
+                            <li><button>Placeholder</button></li>
+                        </ul>
+                    </li>
+                    <li class="header-list-item select" id="select">
+                        <div
+                            class="header-list-item-text"
+                            onclick="selectModalHandler(this)"
+                        >
+                            <a href="#">All Categories</a>
+                            <img src="assets/images/arrow.svg" alt="Open" />
+                        </div>
+                        <ul class="select-modal hidden">
+                            <li><button>Placeholder</button></li>
+                            <li><button>Placeholder</button></li>
+                            <li><button>Placeholder</button></li>
+                        </ul>
+                    </li>
+                    <li class="header-list-item select" id="select">
+                        <div
+                            class="header-list-item-text"
+                            onclick="selectModalHandler(this)"
+                        >
+                            <a href="#">Gifts & Bundles</a>
+                            <img src="assets/images/arrow.svg" alt="Open" />
+                        </div>
+                        <ul class="select-modal hidden">
+                            <li><button>Placeholder</button></li>
+                            <li><button>Placeholder</button></li>
+                            <li><button>Placeholder</button></li>
+                        </ul>
+                    </li>
+                    <li class="header-list-item"><a href="#">Our Brands</a></li>
+                    <li class="header-list-item"><a href="#">About Us</a></li>
+                </ul>
+                <div class="header-buttons">
+                    <button class="header-button">
+                        <img src="assets/images/search.svg" alt="Search" />
+                    </button>
+                    <button class="header-button">
+                        <img src="assets/images/user.svg" alt="Profile" />
+                    </button>
+                    <button class="header-button cart-button">
+                        <div class="cart-button-count count-button">23</div>
+                        <img src="assets/images/shopping-cart.svg" alt="Cart" />
+                    </button>
+                </div>
+            </div>
+        </header>
 
-        <script src="assets/js/close-button.js"></script>
+        <dialog class="mobile-overlay" id="mobileOverlay">
+            <form class="mobile-overlay__close-button-wrapper" method="dialog">
+                <button class="close-button">
+                    <img
+                        class="close-button"
+                        src="assets/images/cross.svg"
+                        alt="Close Menu"
+                    />
+                </button>
+            </form>
+            <div class="mobile-overlay__body">
+                <ul class="header-list modal-nav-list">
+                    <li class="header-list-item select" id="select">
+                        <div
+                            class="header-list-item-text"
+                            onclick="selectModalHandler(this)"
+                        >
+                            <a href="#">Occasions</a>
+                            <img src="assets/images/arrow.svg" alt="Open" />
+                        </div>
+                        <ul class="select-modal hidden">
+                            <li><button>Placeholder</button></li>
+                            <li><button>Placeholder</button></li>
+                            <li><button>Placeholder</button></li>
+                        </ul>
+                    </li>
+                    <li class="header-list-item select" id="select">
+                        <div
+                            class="header-list-item-text"
+                            onclick="selectModalHandler(this)"
+                        >
+                            <a href="#">All Categories</a>
+                            <img src="assets/images/arrow.svg" alt="Open" />
+                        </div>
+                        <ul class="select-modal hidden">
+                            <li><button>Placeholder</button></li>
+                            <li><button>Placeholder</button></li>
+                            <li><button>Placeholder</button></li>
+                        </ul>
+                    </li>
+                    <li class="header-list-item select" id="select">
+                        <div
+                            class="header-list-item-text"
+                            onclick="selectModalHandler(this)"
+                        >
+                            <a href="#">Gifts & Bundles</a>
+                            <img src="assets/images/arrow.svg" alt="Open" />
+                        </div>
+                        <ul class="select-modal hidden">
+                            <li><button>Placeholder</button></li>
+                            <li><button>Placeholder</button></li>
+                            <li><button>Placeholder</button></li>
+                        </ul>
+                    </li>
+                    <li class="header-list-item"><a href="#">Our Brands</a></li>
+                    <li class="header-list-item"><a href="#">About Us</a></li>
+                </ul>
+            </div>
+        </dialog>
+
+        <script src="assets/js/select-modal.js"></script>
     </body>
 </html>
