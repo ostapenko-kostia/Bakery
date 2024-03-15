@@ -1,0 +1,30 @@
+.share {
+    background: url("../images/share-bg.jpg") no-repeat center / cover;
+    padding-bottom: 60px;
+    &-title {
+        margin-inline: auto;
+    }
+    &-list {
+        width: fit-content;
+        margin-inline: auto;
+        padding-top: 40px;
+        display: flex;
+        column-gap: 30px;
+        &-item {
+            user-select: none;
+            transition-duration: 100ms !important;
+            @include hover {
+                & {
+                    scale: 1.1;
+                }
+            }
+        }
+        @include mobile-l {
+            & {
+                flex-direction: column;
+                column-gap: 0;
+                row-gap: 30px;
+            }
+        }
+    }
+}
