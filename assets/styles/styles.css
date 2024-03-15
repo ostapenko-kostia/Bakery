@@ -463,6 +463,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   border-radius: 5px;
   height: 45px;
+  font-size: 18px;
+  font-weight: 500;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -webkit-transition-duration: 0.1s !important;
           transition-duration: 0.1s !important;
 }
@@ -685,5 +691,54 @@ h1, h2, h3, h4, h5, h6 {
   }
   .whoMakes-title {
     margin-inline: auto;
+  }
+}
+.partner {
+  background: url("../images/partner-bg.jpg") no-repeat center/cover;
+  padding: 60px 0;
+  margin-top: var(--section-padding-y);
+}
+.partner .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+  row-gap: 30px;
+}
+.partner-title {
+  color: #fff;
+}
+@media (max-width: 570px) {
+  .partner-title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 424px) {
+  .partner-title {
+    font-size: 25px;
+  }
+}
+@media (max-width: 376px) {
+  .partner-title {
+    font-size: 20px;
+  }
+}
+.partner-button {
+  width: 330px;
+}
+@media (max-width: 376px) {
+  .partner-button {
+    font-size: 14px;
+    width: 280px;
   }
 }

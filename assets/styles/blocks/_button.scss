@@ -5,6 +5,9 @@
     color: #fff;
     border-radius: 5px;
     height: 45px;
+    font-size: 18px;
+    font-weight: 500;
+    user-select: none;
     transition-duration: 0.1s !important;
     &::focus {
         border: none;
