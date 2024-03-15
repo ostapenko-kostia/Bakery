@@ -4,6 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="assets/styles/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+        />
         <title>Bakery</title>
     </head>
     <body>
@@ -369,11 +373,68 @@
                             Do you have a colleague or family member working
                             hard at home? Our Working From Home box of snacks
                             and drinks is the perfect way to put a smile on
-                            their face, delivered direct to their door.<br><br>To buy
-                            for a large group of people, get in touch and we can
-                            discuss bespoke bundles and personalised messaging.
+                            their face, delivered direct to their door.<br /><br />To
+                            buy for a large group of people, get in touch and we
+                            can discuss bespoke bundles and personalised
+                            messaging.
                         </p>
                         <button class="button surprise-button">Buy Now</button>
+                    </div>
+                </div>
+            </section>
+            <section class="instagram">
+                <div class="container">
+                    <h3 class="section-title instagram-title">
+                        <a href="#"><span>@PremiumBakeryQuality</span></a> on
+                        Instagram
+                    </h3>
+                    <div class="instagram-gallery-wrapper">
+                        <button class="instagram-gallery-button gallery-left">
+                            <svg width="8" height="16">
+                                <path
+                                    d="M6.660,8.922 L6.660,8.922 L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515 L2.350,0.592 L8.507,7.000 L6.660,8.922 Z"
+                                ></path>
+                            </svg>
+                        </button>
+                        <ul class="instagram-gallery">
+                            <li class="instagram-gallery-item">
+                                <img src="assets/images/instPost4.jpg" />
+                            </li>
+                            <li class="instagram-gallery-item">
+                                <img src="assets/images/instPost5.jpg" />
+                            </li>
+                            <li class="instagram-gallery-item">
+                                <img src="assets/images/instPost1.jpg" />
+                            </li>
+                            <li class="instagram-gallery-item">
+                                <img src="assets/images/instPost2.jpg" />
+                            </li>
+                            <li class="instagram-gallery-item">
+                                <img src="assets/images/instPost3.jpg" />
+                            </li>
+                            <li class="instagram-gallery-item">
+                                <img src="assets/images/instPost4.jpg" />
+                            </li>
+                            <li class="instagram-gallery-item">
+                                <img src="assets/images/instPost5.jpg" />
+                            </li>
+                            <li class="instagram-gallery-item">
+                                <img src="assets/images/instPost1.jpg" />
+                            </li>
+                            <li class="instagram-gallery-item">
+                                <img src="assets/images/instPost2.jpg" />
+                            </li>
+                            <li class="instagram-gallery-item">
+                                <img src="assets/images/instPost3.jpg" />
+                            </li>
+                        </ul>
+                        <button class="instagram-gallery-button gallery-right">
+                            <svg width="8" height="16">
+                                <path
+                                    d="M6.660,8.922 L6.660,8.922 L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515 L2.350,0.592 L8.507,7.000 L6.660,8.922 Z"
+                                ></path>
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -439,6 +500,55 @@
             </div>
         </dialog>
 
+        <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
         <script src="assets/js/select-modal.js"></script>
+
+        <script>
+            const glider = new Glider(
+                document.querySelector(".instagram-gallery"),
+                {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    draggable: true,
+                    arrows: {
+                        prev: ".gallery-left",
+                        next: ".gallery-right",
+                    },
+                    duration: 1,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 5,
+                            },
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 4,
+                            },
+                        },
+                        {
+                            breakpoint: 600,
+                            settings: {
+                                slidesToShow: 3,
+                            },
+                        },
+                        {
+                            breakpoint: 425,
+                            settings: {
+                                slidesToShow: 2,
+                            },
+                        },
+                        {
+                            breakpoint: 320,
+                            settings: {
+                                slidesToShow: 1,
+                            },
+                        },
+                    ],
+                }
+            );
+        </script>
     </body>
 </html>
