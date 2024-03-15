@@ -13,7 +13,10 @@
                 <h3 class="promo-title">
                     Free Delivery over $100. Gift with Purchase over $150
                 </h3>
-                <button class="promo-button close-button" onclick="this.parentElement.parentElement.remove()">
+                <button
+                    class="promo-button close-button"
+                    onclick="this.parentElement.parentElement.remove()"
+                >
                     <img
                         class="close-button"
                         src="assets/images/cross.svg"
@@ -22,9 +25,14 @@
                 </button>
             </div>
         </div>
+
         <header class="header" id="header">
             <div class="container">
-                <button class="burger-button" id="burger-button" onclick="document.querySelector('#mobileOverlay').showModal()">
+                <button
+                    class="burger-button"
+                    id="burger-button"
+                    onclick="document.querySelector('#mobileOverlay').showModal()"
+                >
                     <img
                         src="assets/images/burger-icon.png"
                         alt="Open Menu"
@@ -40,11 +48,13 @@
                         height="95"
                 /></a>
                 <ul class="header-list">
-                    <li class="header-list-item select" id="select">
-                        <div
-                            class="header-list-item-text"
-                            onclick="selectModalHandler(this)"
-                        >
+                    <li
+                        class="header-list-item select"
+                        id="select"
+                        onmouseover="selectModalHandler(this, 'hover')"
+                        onmouseleave="selectModalHandler(this, 'leave')"
+                    >
+                        <div class="header-list-item-text">
                             <a href="#">Occasions</a>
                             <img src="assets/images/arrow.svg" alt="Open" />
                         </div>
@@ -54,11 +64,13 @@
                             <li><button>Placeholder</button></li>
                         </ul>
                     </li>
-                    <li class="header-list-item select" id="select">
-                        <div
-                            class="header-list-item-text"
-                            onclick="selectModalHandler(this)"
-                        >
+                    <li
+                        class="header-list-item select"
+                        id="select"
+                        onmouseover="selectModalHandler(this, 'hover')"
+                        onmouseleave="selectModalHandler(this, 'leave')"
+                    >
+                        <div class="header-list-item-text">
                             <a href="#">All Categories</a>
                             <img src="assets/images/arrow.svg" alt="Open" />
                         </div>
@@ -68,11 +80,13 @@
                             <li><button>Placeholder</button></li>
                         </ul>
                     </li>
-                    <li class="header-list-item select" id="select">
-                        <div
-                            class="header-list-item-text"
-                            onclick="selectModalHandler(this)"
-                        >
+                    <li
+                        class="header-list-item select"
+                        id="select"
+                        onmouseover="selectModalHandler(this, 'hover')"
+                        onmouseleave="selectModalHandler(this, 'leave')"
+                    >
+                        <div class="header-list-item-text">
                             <a href="#">Gifts & Bundles</a>
                             <img src="assets/images/arrow.svg" alt="Open" />
                         </div>
@@ -99,6 +113,20 @@
                 </div>
             </div>
         </header>
+
+        <main>
+            <section class="hero">
+                <div class="container hero-wrapper">
+                    <div class="hero-text">
+                        <h2 class="hero-title">Support Your Local Artisans</h2>
+                        <p class="hero-subtitle">
+                            Discover brands and theit stories
+                        </p>
+                    </div>
+                    <button class="button hero-button">Browse bands</button>
+                </div>
+            </section>
+        </main>
 
         <dialog class="mobile-overlay" id="mobileOverlay">
             <form class="mobile-overlay__close-button-wrapper" method="dialog">

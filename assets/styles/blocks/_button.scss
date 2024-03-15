@@ -1,0 +1,18 @@
+.button {
+    background-color: var(--color-orange);
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+    height: 45px;
+    transition-duration: 0.1s !important;
+    &::focus {
+        border: none;
+    }
+    &:active {
+        transform: translateY(1.5px);
+    }
+    @include hover {
+        scale: 1.1;
+    }
+}

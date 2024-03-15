@@ -1,0 +1,31 @@
+.hero {
+    background: url("../images/hero-bg.jpg") no-repeat center / cover;
+    padding: 122px 0 195px 0;
+    &-title {
+        font-family: 'Cormorant';
+        font-weight: 700;
+        @include fluid-text(50, 24);
+    }
+    &-text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    &-button {
+        width: 200px;
+    }
+}
+
+@include mobile {
+    .hero-text {
+        text-align: center;
+    }
+    .hero-button {
+        margin-inline: auto;
+    }
+}

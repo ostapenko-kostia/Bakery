@@ -392,3 +392,72 @@ section {
   cursor: pointer;
   border-bottom: 1px solid #bbb;
 }
+
+.hero {
+  background: url("../images/hero-bg.jpg") no-repeat center/cover;
+  padding: 122px 0 195px 0;
+}
+.hero-title {
+  font-family: "Cormorant";
+  font-weight: 700;
+  font-size: clamp(24px, 3.4722222222vw, 50px);
+}
+.hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 5px;
+}
+.hero-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 40px;
+}
+.hero-button {
+  width: 200px;
+}
+
+@media (max-width: 767px) {
+  .hero-text {
+    text-align: center;
+  }
+  .hero-button {
+    margin-inline: auto;
+  }
+}
+.button {
+  background-color: var(--color-orange);
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  height: 45px;
+  -webkit-transition-duration: 0.1s !important;
+          transition-duration: 0.1s !important;
+}
+.button::focus {
+  border: none;
+}
+.button:active {
+  -webkit-transform: translateY(1.5px);
+          transform: translateY(1.5px);
+}
+@media (hover: hover) {
+  .button:hover {
+    scale: 1.1;
+  }
+}
+@media (hover: none) {
+  .button:active {
+    scale: 1.1;
+  }
+}
