@@ -242,6 +242,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-inline: auto;
   text-align: center;
   font-size: 14px;
+  font-family: "Poppins", sans-serif;
 }
 
 .close-button {
@@ -623,6 +624,66 @@ h1, h2, h3, h4, h5, h6 {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    margin-inline: auto;
+  }
+}
+.whoMakes-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+.whoMakes-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+  padding-bottom: 40px;
+}
+.whoMakes-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+}
+.whoMakes-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+}
+.whoMakes-list-item {
+  background: url("../images/tick.svg") no-repeat left top;
+  padding: 0 0 0 39px;
+}
+.whoMakes-button {
+  width: 270px;
+  margin-top: 30px;
+}
+
+@media (max-width: 1023px) {
+  .whoMakes-rightSide {
+    display: none;
+  }
+  .whoMakes-leftSide {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-inline: auto;
+    text-align: center;
+  }
+  .whoMakes-title {
     margin-inline: auto;
   }
 }

@@ -1,0 +1,46 @@
+.whoMakes {
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+    }
+    &-text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        padding-bottom: 40px;
+    }
+    &-subtitle {
+        font-weight: 500;
+        font-size: 16px;
+    }
+    &-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        &-item {
+            background: url('../images/tick.svg') no-repeat left top;
+            padding: 0 0 0 39px;
+        }
+    }
+    &-button {
+        width: 270px;
+        margin-top: 30px;
+    }
+}
+
+@include tablet {
+    .whoMakes {
+        &-rightSide {
+            display: none;
+        }
+        &-leftSide {
+            width: fit-content;
+            margin-inline: auto;
+            text-align: center;
+        }
+        &-title {
+            margin-inline: auto;
+        }
+    }
+}
