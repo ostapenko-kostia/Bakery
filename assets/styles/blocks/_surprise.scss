@@ -1,0 +1,40 @@
+.surprise {
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 31px;
+    }
+    &-leftSide {
+        width: 50%;
+    }
+    &-rightSide {
+        display: flex;
+        flex-direction: column;
+        padding: 53px 0;
+    }
+    &-title {
+        margin-bottom: 20px;
+        @include tablet {
+            & {
+                font-size: 30px;
+            }
+        }
+    }
+    &-text {
+        margin-bottom: 30px;
+    }
+    &-button {
+        width: 140px;
+    }
+    @media (max-width: 850px) {
+        &-leftSide {
+            display: none;
+        }
+        &-rightSide {
+            width: fit-content;
+            text-align: center;
+            margin-inline: auto;
+            align-items: center;
+        }
+    }
+}
