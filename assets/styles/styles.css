@@ -935,3 +935,59 @@ h1, h2, h3, h4, h5, h6 {
     row-gap: 30px;
   }
 }
+
+.footer {
+  padding: 60px 0;
+}
+.footer-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+.footer-element-title {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.footer-element-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+}
+.footer-element a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .footer-element a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .footer-elements {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+    row-gap: 40px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
